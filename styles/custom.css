@@ -1,0 +1,14 @@
+.cu-left {
+    float: left;
+    padding: 25px 75px 25px;
+}
+
+.cu-right {
+    float: right;
+    padding: 25px 75px 25px;
+}
+
+.cu-proj {
+   
+    width: 100%;
+}

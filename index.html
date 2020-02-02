@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>TR Design</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles/w3.css">
 <link rel="stylesheet" href="styles/style.css">
 <link rel="stylesheet" href="styles/custom.css">
+<link rel="stylesheet" href="styles/swipebox.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/jquery.swipebox.js"></script>
+<script src="js/ios-orientationchange-fix.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+  ;( function( $ ) {
+  
+    $( '.swipebox' ).swipebox();
+  
+  } )( jQuery );
+  </script>
+</head>
 
 <body class="w3-black">
 
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
   <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
     <!-- Avatar image in top left corner -->
-    <img src="img/nav/tom_4_44.jpg" style="width:100%">
+    <img src="img/nav.jpg" style="width:100%">
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
       <i class="fa fa-home w3-xxlarge"></i>
       <p>HOME</p>
@@ -51,8 +64,8 @@
     <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
       <h1 class="w3-jumbo"><span class="w3-hide-small">TR DESIGN</span></h1>
       <h2><span class="w3-hide-large w3-hide-medium">TR DESIGN</span></h2>
-      <p>Photographer philosopher, actor, billionaire and carpenter.</p>
-      <img src="img/tom_1.jpg" alt="boy" class="w3-image" width="600" height="800">
+      <p>Photographer, philosopher, actor, billionaire and carpenter.</p>
+      <img src="img/main_person.jpg" alt="boy" class="w3-image" width="600" height="800">
     </header>
 
     <!-- About Section -->
@@ -153,15 +166,15 @@
       <div class="w3-row-padding w3-content" style="margin:auto">
 
         <div class="w3-half">
-          <img src="img/pho_1.jpg" style="width:100%">
-          <img src="img/pho_2.jpg" style="width:100%">
-          <img src="img/pho_3.jpg" style="width:100%">
+          <a href="img/proj/pho_1.jpg" class="swipebox cu-proj" title="Photo One"><img src="img/proj/thmb/pho_1.jpg" alt="One piece of beautifull gin lamp" /></a>
+          <a href="img/proj/pho_2.jpg" class="swipebox cu-proj"  title="Photo two"><img src="img/proj/thmb/pho_2.jpg" alt="One piece of beautifull gin lamp" /></a>
+          <a href="img/proj/pho_3.jpg" class="swipebox cu-proj"  title="Photo three"><img src="img/proj/thmb/pho_3.jpg" alt="One piece of beautifull gin lamp" /></a>
         </div>
 
         <div class="w3-half">
-          <img src="img/pho_4.jpg" style="width:100%">
-          <img src="img/pho_5.jpg" style="width:100%">
-          <img src="img/" style="width:100%">
+          <a href="img/proj/pho_4.jpg" class="swipebox cu-proj"  title="Photo four"><img src="img/proj/thmb/pho_4.jpg" alt="One piece of beautifull gin lamp" /></a>          
+          <a href="img/proj/pho_5.jpg" class="swipebox cu-proj"  title="Photo five"><img src="img/proj/thmb/pho_5.jpg" alt="One piece of beautifull gin lamp" /></a>          
+          <a href="img/proj/pho_6.jpg" class="swipebox cu-proj"  title="Photo six"><img src="img/proj/thmb/pho_6.jpg" alt="One piece of beautifull gin lamp" /></a>          
         </div>
         <!-- End photo grid -->
       </div>

@@ -1,0 +1,10 @@
+// addition for swipebox, closing img on click on bg
+jQuery(function () {
+    jQuery(document.body)
+        .on('click touchend', '#swipebox-slider .current img', function (e) {
+            return false;
+        })
+        .on('click touchend', '#swipebox-slider .current', function (e) {
+            jQuery('#swipebox-close').trigger('click');
+        });
+});

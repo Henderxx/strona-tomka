@@ -15,11 +15,11 @@ h6 {
     
 }
 .bgimg-1{
-    background-image: url("../img/background_4.jpg");
+    background-image: url("../img/bg/background_4.jpg");
     min-height: 100%;
 }
 .bgimg-2{
-    background-image: url("../img/background_2.jpg");
+    background-image: url("../img/bg/background_2.jpg");
     min-height: 600px;
 }
 .w3-row-padding img {
